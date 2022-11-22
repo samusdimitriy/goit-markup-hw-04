@@ -387,13 +387,13 @@ h2, h3 {
         
 }
 
-.soc-links .link {
+.soc-links a {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: inherit;
     fill: var(--color-icon);
 }
@@ -410,6 +410,63 @@ h2, h3 {
     margin-left: 10px;
 }
 
+/* Clients */
+
+.clients {
+    padding-top: 94px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.clients-titel {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.container-clients {
+    display: flex;
+}
+
+.container-clients .list {
+    margin: 0;
+}
+
+.clients .link {
+    display: flex;
+    border: 1px solid #ECECEC;
+    border-color: rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    min-width: 170px;
+    min-height: 92px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-icon);
+}
+
+.clients .item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+    border-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+
+}
+
+.clients .icon {
+    fill: inherit;
+    width: 106px;
+    height: 60px;
+    /* fill: var(--color-icon); */
+}
 
 
 
@@ -418,7 +475,8 @@ h2, h3 {
 
 
 
-/* Portfolio filter buttons */
+
+/* Portfolio */
 
 .buttons {
     margin-top: 94px;
@@ -541,6 +599,11 @@ h2, h3 {
     letter-spacing: 0.03em;
  }
 
+ .portfolio-list .portfolio-item:hover,
+ .portfolio-list .portfolio-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+
 
 /* Footer */
 
@@ -548,20 +611,25 @@ footer {
     color: var(--white-color);
     background-color: var(--background-color);
     padding: 60px 215px;
-    display: block;
+    max-width: inherit;
 }
 
-.footer {
+.
+
+.footer-logo {
+    display: block;
     
 }
 
-a.footer {
-    padding: 0;
+.footer .container {
+    display: flex;
+    align-items: baseline;
 }
 
 .address .list {
     display: block;
     padding-right: auto;
+    margin: 0;
 }
 
 .address {
@@ -583,5 +651,35 @@ a.footer {
 .link.map {
     color: #ffffff;
 }
+
+.join-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.join {
+    margin-left: 70px;
+}
+
+.join .soc-links {
+    padding: 0;
+}
+
+.join .link {
+    fill: var(--white-color);
+    background: rgba(255, 255, 255, 0.1);;
+}
+
+.join .link:hover,
+.join .link:focus {
+    background-color: var(--accent-text-color);
+}
+
+
 
 
